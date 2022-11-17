@@ -1,6 +1,7 @@
 #
 # Netbeans project files
 #
+/vendor
 /nbproject
 /xhprof_lib/config.php
 .idea

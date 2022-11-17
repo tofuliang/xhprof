@@ -1,0 +1,69 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "413c3ca2f64f1113f22ac5ab18f60718",
+    "packages": [
+        {
+            "name": "sy-records/xhprof2flamegraph",
+            "version": "v1.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sy-records/xhprof2flamegraph.git",
+                "reference": "b7b2592b3e47991c0d311071815f24e20c6dfb5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sy-records/xhprof2flamegraph/zipball/b7b2592b3e47991c0d311071815f24e20c6dfb5d",
+                "reference": "b7b2592b3e47991c0d311071815f24e20c6dfb5d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "bin": [
+                "xhprof2flamegraph",
+                "flamegraph.pl"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Xhprof2Flamegraph\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Shen Yan",
+                    "email": "52o@qq52o.cn"
+                }
+            ],
+            "description": "将xhprof产生的数据转为可以生成flamegraph火焰图的格式并生成火焰图",
+            "keywords": [
+                "flamegraph",
+                "tideways",
+                "xhprof"
+            ],
+            "support": {
+                "email": "52o@qq52o.cn",
+                "issues": "https://github.com/sy-records/xhprof2flamegraph/issues",
+                "source": "https://github.com/sy-records/xhprof2flamegraph/tree/master"
+            },
+            "time": "2019-09-02T01:00:55+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}

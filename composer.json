@@ -1,0 +1,6 @@
+{
+  "require": {
+    "sy-records/xhprof2flamegraph": "^1.2",
+    "ext-json": "*"
+  }
+}

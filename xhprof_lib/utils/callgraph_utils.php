@@ -25,6 +25,7 @@ $xhprof_legal_image_types = array(
     "jpg" => 1,
     "gif" => 1,
     "png" => 1,
+    "svg" => 1,
     "ps"  => 1,
     );
 
@@ -59,6 +60,9 @@ function xhprof_http_header($name, $value) {
  */
 function xhprof_generate_mime_header($type, $length) {
   switch ($type) {
+    case 'svg':
+      $mime = 'image/svg+xml';
+      break;
     case 'jpg':
       $mime = 'image/jpeg';
       break;
@@ -445,7 +449,7 @@ function xhprof_generate_dot_script($raw_data, $threshold, $source, $page,
                                     / $sym_table[$child]["wt"])
                   : "0.0%";
 
-      $taillabel = ($sym_table[$parent]["wt"] > 0) ?
+      $taillabel = ($sym_table[$parent]["wt"] > 0) && ($sym_table[$parent]["wt"] - $sym_table["$parent"]["excl_wt"]) > 0?
         sprintf("%.1f%%",
                 100 * $info["wt"] /
                 ($sym_table[$parent]["wt"] - $sym_table["$parent"]["excl_wt"]))
